@@ -1,0 +1,11 @@
+First tried a smaller LSTM model wherein my input data is just agent 0's input and it's corresponding output.
+Window size is X is 40 and Y is  10 .. so 40:10 X and Y..
+
+but this kept me thinking as for this using LSTM I can only push 0th agent into training, and just discarding rest of the 
+agents data
+
+so what to do.. doesn't attention come in mind ?
+
+what i can do is, input from all the 50 agents gives output to just 0th agent, hence the attention will remodulate
+itself in sucha a way that the amount of focus from each agent will be specified to just that single output
+

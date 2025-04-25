@@ -18,7 +18,8 @@ def getData(path):
     train_data = train_file['data']
     test_file = np.load(path+"/test_input.npz")
     test_data = test_file['data']
-    print(f"train_data's shape {train_data.shape} and test data is {train_data.shape}")
+    print(f"Training Data's shape is {train_data.shape} and Test Data's is {train_data.shape}")
     return train_data, test_data
 
-# print(train_data[0][0].shape)
+trainData, testData = getData("data")
+print(trainData[0][0][0])
