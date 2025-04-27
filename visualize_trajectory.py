@@ -48,5 +48,5 @@ def make_gif(data_matrix, name='example'):
 
 
 train_data, test_data = getData("data")
-data_matrix = train_data[0]        
-make_gif(data_matrix, 'index0')
+data_matrix = train_data[2]        
+make_gif(data_matrix, 'index2')
