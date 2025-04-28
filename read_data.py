@@ -40,6 +40,39 @@ class LargeDataset(Dataset):
             torch.tensor(self.labels[idx]).float()
         )
 
+
+class WindowedNormalizedDataset(Dataset):
+    def __init__(self, data, window_size=40, forecast_horizon=10, mean=None, std=None):
+        self.data = data
+        self.window_size = window_size
+        self.forecast_horizon = forecast_horizon
+        self.mean = mean
+        self.std = std
+
+        # Precompute indices of valid (sample, t) combinations
+        self.indices = []
+        for sample in range(data.shape[0]):
+            for t in range(data.shape[2] - window_size - forecast_horizon + 1):
+                self.indices.append((sample, t))
+
+    def __len__(self):
+        return len(self.indices)
+
+    def __getitem__(self, idx):
+        sample_idx, t = self.indices[idx]
+        
+        x = self.data[sample_idx, :, t:t+self.window_size, :]  # shape: (50, 40, 6)
+        y = self.data[sample_idx, 0, t+self.window_size:t+self.window_size+self.forecast_horizon, :2]  # shape: (10, 2)
+
+        if self.mean is not None and self.std is not None:
+            x = (x - self.mean) / self.std
+        
+        return torch.tensor(x, dtype=torch.float32), torch.tensor(y, dtype=torch.float32)
+
+
+# dataset = WindowedNormalizedDataset(traindata)
+
+
 def getData(path):
     zip_path = './data/cse-251-b-2025.zip'
     extract_to = './data/'
