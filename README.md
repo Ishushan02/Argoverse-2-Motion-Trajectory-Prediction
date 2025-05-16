@@ -27,20 +27,19 @@ Build ML models that predict **future trajectories** of agents with high accurac
 
 ## 📁 Dataset Summary
 
-| Feature         | Description                       |
-|-----------------|-----------------------------------|
-| Duration        | 11 seconds                        |
-| Sampling Rate   | 10Hz                              |
-| Input           | Past trajectories (2 sec)         |
-| Output          | Future trajectories (9 sec)       |
-| Agents          | Vehicles, pedestrians, cyclists   |
-| Environment     | Real-world urban driving          |
+| Feature         | Description                               |
+|-----------------|-------------------------------------------|
+| Sampling Rate   | 10Hz                                      |
+| Input           | Past trajectories (50 Timestamps)         |
+| Output          | Future trajectories (60 Timestamps)       |
+| Agents          | Vehicles, pedestrians, cyclists           |
+| Environment     | Real-world urban driving                  |
 
 ---
 
 ## 🔧 Model Architectures
 
-We explored multiple architectures from basic LSTMs to advanced encoder-decoder frameworks.
+I explored multiple architectures from basic LSTMs to advanced encoder-decoder frameworks and many other Architectures.
 
 ---
 
@@ -85,7 +84,7 @@ We explored multiple architectures from basic LSTMs to advanced encoder-decoder 
 
 ## 🚀 Coming Soon
 
-> We’re actively working on implementing:
+> I am actively working on implementing:
 - ✅ Transformer-based architectures with attention mechanisms
 
 ---
