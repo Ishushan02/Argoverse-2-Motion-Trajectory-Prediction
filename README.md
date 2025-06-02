@@ -1,4 +1,4 @@
-# 🚗 Argoverse-2 Motion Trajectory Prediction 🧠📈
+# 🚗 Argoverse-2 Motion Trajectory Prediction
 
 Welcome to the Argoverse 2 Motion Trajectory Prediction Challenge!  
 This project focuses on building accurate **motion forecasting models** using the [Argoverse 2 Motion Forecasting Dataset](https://www.argoverse.org/av2.html). You'll work with real-world driving data, pushing the limits of AI in **autonomous vehicle navigation**.
@@ -19,13 +19,13 @@ This dataset includes:
 - 🔄 **Sampled at 10Hz**
 - 🚶‍♂️ Diverse agents with complex behaviors & interactions
 
-### 🔍 Objective
+###  Objective
 
 Build ML models that predict **future trajectories** of agents with high accuracy in complex, crowded, and unpredictable scenes.
 
 ---
 
-## 📁 Dataset Summary
+## Dataset Summary
 
 | Feature         | Description                               |
 |-----------------|-------------------------------------------|
@@ -37,12 +37,12 @@ Build ML models that predict **future trajectories** of agents with high accurac
 
 ---
 
-## 🔧 Model Architectures
+##  Model Architectures
 
 I explored multiple architectures from basic LSTMs to advanced encoder-decoder frameworks and many other Architectures.
 
-
-### **📘 Architectures **
+<!-- 
+###  Architectures
 
 **Architecture 1**  
 - 📙 LSTM (1 unit) → MLP (3 layers)
@@ -72,8 +72,17 @@ I explored multiple architectures from basic LSTMs to advanced encoder-decoder f
 - 📗 Encoder(Single Layer MLP Followed by LSTM) and Decoder(Singler Layer LSTM followed by MLP)
 <div align="center">
   <img src="./documents/arch-5.png" alt="Model A Diagram" width="200"/>
-</div>
+</div> -->
 
+### Architectures
+
+| Architecture | Description | Diagram |
+|--------------|-------------|---------|
+| **Architecture 1** | 📙 LSTM (1 unit) → MLP (3 layers) | <img src="./documents/arch-1.png" alt="Architecture 1" width="200"/> |
+| **Architecture 2** | 📗 Encoder (3-layer MLP) → LSTM → Decoder (3-layer MLP) | <img src="./documents/arch-2.png" alt="Architecture 2" width="200"/> |
+| **Architecture 3** | 📙 Encoder (Smaller MLP → LSTM) and Decoder (Smaller LSTM → MLP) | <img src="./documents/arch-3.png" alt="Architecture 3" width="200"/> |
+| **Architecture 4** | 🧱 Encoder (MLP → LSTM), Decoder (LSTM → MLP) + Skip Connections | <img src="./documents/arch-4.png" alt="Architecture 4" width="200"/> |
+| **Architecture 5** | 📗 Encoder (Single Layer MLP → LSTM), Decoder (Single Layer LSTM → MLP) | <img src="./documents/arch-5.png" alt="Architecture 5" width="200"/> |
 
 # Final Model Transformer
 
