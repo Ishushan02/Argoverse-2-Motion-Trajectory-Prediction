@@ -5,7 +5,7 @@ This project focuses on building accurate **motion forecasting models** using th
 
 ---
 
-## 📌 About the Challenge
+## About the Challenge
 
 In real-world driving, predicting the motion of surrounding agents—vehicles, pedestrians, and cyclists—is **critical for safe navigation**.  
 This dataset includes:
