@@ -126,25 +126,16 @@ My Competition Ranking - 9
 
 ## 🎥 Trajectory Prediction Visualizations
 
-### Example 1: Vehicle Trajectory Prediction
+### Examples of Vehicle Trajectory Prediction
 
 <div align="center">
   <img src="./trajectory_visualization/vehicle_trajectory.gif" alt="Vehicle Trajectory Prediction" width="300"/>
 </div>
 
----
-
-### Example 2: Pedestrian Trajectory Prediction
-
 <div align="center">
   <img src="./trajectory_visualization/vehicle_trajectory-1.gif" alt="Pedestrian Trajectory Prediction" width="300"/>
 </div>
 
----
-
-### Example 3: Multi-Agent Trajectory Prediction
-
 <div align="center">
   <img src="./trajectory_visualization/vehicle_trajectory-2.gif" alt="Multi-Agent Trajectory Prediction" width="300"/>
 </div>
-```
