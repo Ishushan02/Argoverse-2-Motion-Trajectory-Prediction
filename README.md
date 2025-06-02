@@ -3,10 +3,6 @@
 Welcome to the Argoverse 2 Motion Trajectory Prediction Challenge!  
 This project focuses on building accurate **motion forecasting models** using the [Argoverse 2 Motion Forecasting Dataset](https://www.argoverse.org/av2.html). You'll work with real-world driving data, pushing the limits of AI in **autonomous vehicle navigation**.
 
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/placeholder/autonomous-car.png" alt="Autonomous Driving" width="600"/>
-</div>
-
 ---
 
 ## 📌 About the Challenge
@@ -86,11 +82,7 @@ I explored multiple architectures from basic LSTMs to advanced encoder-decoder f
 
 # Final Model Transformer
 
-## 🚀 Overview
-
-**Transformer Model** is the final architecture selected for trajectory prediction in multi-agent scenarios. It combines the most effective components from prior model iterations (A, B, and F), leading to improved encoding of agent dynamics and better generalization across diverse scenes.
-
-This model was used for **preliminary benchmarking** and serves as a strong baseline for future experiments.
+The **Transformer Model** is a deep learning model designed to predict future trajectories based on agent movement data. It processes high-dimensional input features using a multi-layered feedforward encoder that transforms them into a lower-dimensional representation. A transformer encoder then models temporal and inter-agent interactions by capturing dependencies across the input sequence. The model focuses on the first agent (assumed to be the ego agent) for trajectory prediction. The final output is a sequence of predicted 2D coordinates for the specified prediction length. This architecture is well-suited for applications such as autonomous driving or multi-agent tracking.
 
 ---
 
