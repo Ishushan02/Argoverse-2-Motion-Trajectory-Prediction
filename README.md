@@ -75,19 +75,34 @@ I explored multiple architectures from basic LSTMs to advanced encoder-decoder f
 
 ---
 
-### **📕 Model M (Final Model for Preliminary Results)**
+# Final Trajectory Transformer
 
-- 🏁 Finalized architecture used in benchmarking
-- Combines best practices from Models A, B, and F
+## 🚀 Overview
+
+**Model M** is the final architecture selected for trajectory prediction in multi-agent scenarios. It combines the most effective components from prior model iterations (A, B, and F), leading to improved encoding of agent dynamics and better generalization across diverse scenes.
+
+This model was used for **preliminary benchmarking** and serves as a strong baseline for future experiments.
+
+---
+
+## 📐 Architecture Details
+
+### 🔧 Key Parameters:
+- `input_dim=550`: Flattened dimension of trajectory data (50 time steps × 11 features).
+- `model_dim=256`: Embedding size used throughout the Transformer pipeline.
+- `num_heads=8`: Number of self-attention heads in each Transformer layer.
+- `num_layers=6`: Depth of the Transformer encoder stack.
+- `dropout=0.1`: Applied dropout for regularization.
+- `pred_len=60`: Number of future time steps to predict (output).
+- `num_agents=50`: Max number of agents in a given scene.
+### Total Parameters: 8,261,240
 
 ---
 
-## 🚀 Coming Soon
+## 🔄 Forward Pass Workflow
 
-> I am actively working on implementing:
-- ✅ Transformer-based architectures with attention mechanisms
-
----
+```python
+x: Tensor of shape (B, N, T, Ft) = (Batch, Num Agents, Time Steps, Features)
 
 ## 💻 Get Started
 
