@@ -74,10 +74,6 @@ I explored multiple architectures from basic LSTMs to advanced encoder-decoder f
   <img src="./documents/arch-5.png" alt="Model A Diagram" width="200"/>
 </div>
 
-**Architecture 2**  
-- 🧱 Encoder (6-layer MLP) → LSTM → Decoder (6-layer MLP)
-
-
 
 # Final Model Transformer
 
@@ -91,7 +87,7 @@ This model was used for **preliminary benchmarking** and serves as a strong base
 
 ## 📐 Architecture Details
 
-### 🔧 Key Parameters:
+###  Key Parameters:
 - `input_dim=550`: Flattened dimension of trajectory data (50 time steps × 11 features).
 - `model_dim=256`: Embedding size used throughout the Transformer pipeline.
 - `num_heads=8`: Number of self-attention heads in each Transformer layer.
@@ -102,35 +98,17 @@ This model was used for **preliminary benchmarking** and serves as a strong base
 ### Total Parameters: 8,261,240
 
 ---
-
-## 🔄 Forward Pass Workflow
-
-```python
-x: Tensor of shape (B, N, T, Ft) = (Batch, Num Agents, Time Steps, Features)
-````
-
-## 💻 Get Started
-
-1. Clone the repo:
-
-   ```
-   git clone https://github.com/yourusername/Argoverse-2-Motion-Trajectory-Prediction.git
-   cd Argoverse-2-Motion-Trajectory-Prediction
-   ```
-
-  Final Model is in - final1.ipynb
-  Train MSE - 0.0019361081 
-  Validation MSE - 0.0106566806 
-  Validation MAE - 1.9310559519 
-  Validation MSE(True) - 1.0656687887 
-  Final Test Accuracy - 7.47883 
-  My Competition Ranking - 9 
-
+## Final Results
+- `Final Model`: final1.ipynb
+- `Train MSE`: 0.0019361081 
+- `Validation MSE`: 0.0106566806 
+- `Validation MAE`: 1.9310559519 
+- `Validation MSE(True)`: 1.0656687887 
+- `Final Test Accuracy`: 7.47883
+- `My Competition Ranking`: 9
+- `Kaggle Test Link`: https://www.kaggle.com/competitions/cse-251-b-2025/leaderboard
 
 ## 🎥 Trajectory Prediction Visualizations
-
-### Examples of Vehicle Trajectory Prediction
-
 <div align="center">
   <img src="./trajectory_visualization/vehicle_trajectory.gif" alt="Vehicle Trajectory Prediction" width="300"/>
 </div>
@@ -142,3 +120,12 @@ x: Tensor of shape (B, N, T, Ft) = (Batch, Num Agents, Time Steps, Features)
 <div align="center">
   <img src="./trajectory_visualization/vehicle_trajectory-2.gif" alt="Multi-Agent Trajectory Prediction" width="300"/>
 </div>
+
+## 💻 Get Started
+
+. Clone the repo:
+
+   ```
+   git clone https://github.com/yourusername/Argoverse-2-Motion-Trajectory-Prediction.git
+   cd Argoverse-2-Motion-Trajectory-Prediction
+   ```
