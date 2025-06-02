@@ -103,7 +103,7 @@ The **Transformer Model** is a deep learning model designed to predict future tr
 - `Validation MSE`: 0.0106566806 
 - `Validation MAE`: 1.9310559519 
 - `Validation MSE(True)`: 1.0656687887 
-- `Final Test Accuracy`: 7.47883
+- `Final Test MSE`: 7.47883
 - `My Competition Ranking`: 9
 - `Kaggle Test Link`: https://www.kaggle.com/competitions/cse-251-b-2025/leaderboard
 
