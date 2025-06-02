@@ -47,6 +47,7 @@ def make_gif(data_matrix, name='example'):
    plt.close()
 
 
-# train_data, test_data = getData("data")
-# data_matrix = train_data[2]        
+train_data, test_data = getData("data")
+data_matrix = train_data[2]      
+print(data_matrix.shape)  
 # make_gif(data_matrix, 'index2')

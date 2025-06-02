@@ -1,3 +1,6 @@
+Absolutely! Here’s the full updated README.md file including the 3 GIFs section for trajectory prediction visualizations:
+
+````markdown
 # 🚗 Argoverse-2 Motion Trajectory Prediction 🧠📈
 
 Welcome to the Argoverse 2 Motion Trajectory Prediction Challenge!  
@@ -103,19 +106,53 @@ This model was used for **preliminary benchmarking** and serves as a strong base
 
 ```python
 x: Tensor of shape (B, N, T, Ft) = (Batch, Num Agents, Time Steps, Features)
+````
 
 ## 💻 Get Started
 
 1. Clone the repo:
+
    ```bash
    git clone https://github.com/yourusername/Argoverse-2-Motion-Trajectory-Prediction.git
    cd Argoverse-2-Motion-Trajectory-Prediction
+   ```
 
-   Final Model is in - final1.ipynb 
-   Train MSE - 0.0019361081
-   Validation MSE - 0.0106566806
-   Validation MAE - 1.9310559519
-   Validation MSE(True) - 1.0656687887
-   Final Test Accuracy - 7.47883
-   My Competetion Ranking - 9
+Final Model is in - final1.ipynb
+Train MSE - 0.0019361081
+Validation MSE - 0.0106566806
+Validation MAE - 1.9310559519
+Validation MSE(True) - 1.0656687887
+Final Test Accuracy - 7.47883
+My Competition Ranking - 9
 
+---
+
+## 🎥 Trajectory Prediction Visualizations
+
+### Example 1: Vehicle Trajectory Prediction
+
+<div align="center">
+  <img src="./trajectory_visualization/vehicle_trajectory.gif" alt="Vehicle Trajectory Prediction" width="600"/>
+</div>
+
+---
+
+### Example 2: Pedestrian Trajectory Prediction
+
+<div align="center">
+  <img src="./trajectory_visualization/vehicle_trajectory-1.gif" alt="Pedestrian Trajectory Prediction" width="600"/>
+</div>
+
+---
+
+### Example 3: Multi-Agent Trajectory Prediction
+
+<div align="center">
+  <img src="./trajectory_visualization/vehicle_trajectory-2.gif" alt="Multi-Agent Trajectory Prediction" width="600"/>
+</div>
+```
+
+---
+
+Just upload your GIF files under a `gifs/` folder or adjust the paths accordingly.
+Let me know if you want help making those GIFs or anything else!
