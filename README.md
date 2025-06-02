@@ -114,28 +114,32 @@ x: Tensor of shape (B, N, T, Ft) = (Batch, Num Agents, Time Steps, Features)
    cd Argoverse-2-Motion-Trajectory-Prediction
    ```
 
-Final Model is in - final1.ipynb
-Train MSE - 0.0019361081
-Validation MSE - 0.0106566806
-Validation MAE - 1.9310559519
-Validation MSE(True) - 1.0656687887
-Final Test Accuracy - 7.47883
-My Competition Ranking - 9
+  Final Model is in - final1.ipynb
+  Train MSE - 0.0019361081 
+  Validation MSE - 0.0106566806 
+  Validation MAE - 1.9310559519 
+  Validation MSE(True) - 1.0656687887 
+  Final Test Accuracy - 7.47883 
+  My Competition Ranking - 9 
 
----
 
 ## 🎥 Trajectory Prediction Visualizations
+<div align="center" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
 
-### Examples of Vehicle Trajectory Prediction
+  <div style="border: 2px solid #ccc; padding: 10px; border-radius: 10px;">
+    <img src="./trajectory_visualization/vehicle_trajectory.gif" alt="Vehicle Trajectory Prediction" width="300"/>
+    <p style="text-align: center; margin-top: 8px;">Vehicle Trajectory</p>
+  </div>
 
-<div align="center">
-  <img src="./trajectory_visualization/vehicle_trajectory.gif" alt="Vehicle Trajectory Prediction" width="300"/>
+  <div style="border: 2px solid #ccc; padding: 10px; border-radius: 10px;">
+    <img src="./trajectory_visualization/vehicle_trajectory-1.gif" alt="Pedestrian Trajectory Prediction" width="300"/>
+    <p style="text-align: center; margin-top: 8px;">Pedestrian Trajectory</p>
+  </div>
+
+  <div style="border: 2px solid #ccc; padding: 10px; border-radius: 10px;">
+    <img src="./trajectory_visualization/vehicle_trajectory-2.gif" alt="Multi-Agent Trajectory Prediction" width="300"/>
+    <p style="text-align: center; margin-top: 8px;">Multi-Agent Trajectory</p>
+  </div>
+
 </div>
 
-<div align="center">
-  <img src="./trajectory_visualization/vehicle_trajectory-1.gif" alt="Pedestrian Trajectory Prediction" width="300"/>
-</div>
-
-<div align="center">
-  <img src="./trajectory_visualization/vehicle_trajectory-2.gif" alt="Multi-Agent Trajectory Prediction" width="300"/>
-</div>
