@@ -74,17 +74,17 @@ I explored multiple architectures from basic LSTMs to advanced encoder-decoder f
 
 | Architecture | Description | Diagram |
 |--------------|-------------|---------|
-| **Architecture 1** | 📙 LSTM (1 unit) → MLP (3 layers) | <img src="./documents/arch-1.png" alt="Architecture 1" width="200"/> |
-| **Architecture 2** | 📗 Encoder (3-layer MLP) → LSTM → Decoder (3-layer MLP) | <img src="./documents/arch-2.png" alt="Architecture 2" width="200"/> |
-| **Architecture 3** | 📙 Encoder (Smaller MLP → LSTM) and Decoder (Smaller LSTM → MLP) | <img src="./documents/arch-3.png" alt="Architecture 3" width="200"/> |
-| **Architecture 4** | 🧱 Encoder (MLP → LSTM), Decoder (LSTM → MLP) + Skip Connections | <img src="./documents/arch-4.png" alt="Architecture 4" width="200"/> |
-| **Architecture 5** | 📗 Encoder (Single Layer MLP → LSTM), Decoder (Single Layer LSTM → MLP) | <img src="./documents/arch-5.png" alt="Architecture 5" width="200"/> |
+| **Architecture 1** | LSTM (1 unit) → MLP (3 layers) | <img src="./documents/arch-1.png" alt="Architecture 1" width="200"/> |
+| **Architecture 2** | Encoder (3-layer MLP) → LSTM → Decoder (3-layer MLP) | <img src="./documents/arch-2.png" alt="Architecture 2" width="200"/> |
+| **Architecture 3** | Encoder (Smaller MLP → LSTM) and Decoder (Smaller LSTM → MLP) | <img src="./documents/arch-3.png" alt="Architecture 3" width="200"/> |
+| **Architecture 4** | Encoder (MLP → LSTM), Decoder (LSTM → MLP) + Skip Connections | <img src="./documents/arch-4.png" alt="Architecture 4" width="200"/> |
+| **Architecture 5** | Encoder (Single Layer MLP → LSTM), Decoder (Single Layer LSTM → MLP) | <img src="./documents/arch-5.png" alt="Architecture 5" width="200"/> |
 
 # Final Model Transformer
 
 The **Transformer Model** is a deep learning model designed to predict future trajectories based on agent movement data. It processes high-dimensional input features using a multi-layered feedforward encoder that transforms them into a lower-dimensional representation. A transformer encoder then models temporal and inter-agent interactions by capturing dependencies across the input sequence. The model focuses on the first agent (assumed to be the ego agent) for trajectory prediction. The final output is a sequence of predicted 2D coordinates for the specified prediction length. This architecture is well-suited for applications such as autonomous driving or multi-agent tracking.
 
-## 📐 Architecture Details
+## Architecture Details
 
 ###  Key Parameters:
 - `input_dim=550`: Flattened dimension of trajectory data (50 time steps × 11 features).
@@ -122,7 +122,7 @@ The **Transformer Model** is a deep learning model designed to predict future tr
   <img src="./trajectory_visualization/vehicle_trajectory-2.gif" alt="Multi-Agent Trajectory Prediction" width="450"/>
 </div>
 
-## 💻 Get Started
+##  Get Started
 
 . Clone the repo:
 
