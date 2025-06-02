@@ -47,13 +47,13 @@ I explored multiple architectures from basic LSTMs to advanced encoder-decoder f
 
 **Architecture 1**  
 - 🧠 LSTM (1 unit) → MLP (3 layers)
+<div align="center">
+  <img src="./documents/arch-1.png" alt="Model A Diagram" width="600"/>
+</div>
 
 **Architecture 2**  
 - 🧱 Encoder (6-layer MLP) → LSTM → Decoder (6-layer MLP)
 
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/placeholder/model-a.png" alt="Model A Diagram" width="600"/>
-</div>
 
 ---
 
@@ -109,7 +109,7 @@ x: Tensor of shape (B, N, T, Ft) = (Batch, Num Agents, Time Steps, Features)
 
 1. Clone the repo:
 
-   ```bash
+   ```
    git clone https://github.com/yourusername/Argoverse-2-Motion-Trajectory-Prediction.git
    cd Argoverse-2-Motion-Trajectory-Prediction
    ```
@@ -124,22 +124,17 @@ x: Tensor of shape (B, N, T, Ft) = (Batch, Num Agents, Time Steps, Features)
 
 
 ## 🎥 Trajectory Prediction Visualizations
-<div align="center" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
 
-  <div style="border: 2px solid #ccc; padding: 10px; border-radius: 10px;">
-    <img src="./trajectory_visualization/vehicle_trajectory.gif" alt="Vehicle Trajectory Prediction" width="300"/>
-    <p style="text-align: center; margin-top: 8px;">Vehicle Trajectory</p>
-  </div>
+### Examples of Vehicle Trajectory Prediction
 
-  <div style="border: 2px solid #ccc; padding: 10px; border-radius: 10px;">
-    <img src="./trajectory_visualization/vehicle_trajectory-1.gif" alt="Pedestrian Trajectory Prediction" width="300"/>
-    <p style="text-align: center; margin-top: 8px;">Pedestrian Trajectory</p>
-  </div>
-
-  <div style="border: 2px solid #ccc; padding: 10px; border-radius: 10px;">
-    <img src="./trajectory_visualization/vehicle_trajectory-2.gif" alt="Multi-Agent Trajectory Prediction" width="300"/>
-    <p style="text-align: center; margin-top: 8px;">Multi-Agent Trajectory</p>
-  </div>
-
+<div align="center">
+  <img src="./trajectory_visualization/vehicle_trajectory.gif" alt="Vehicle Trajectory Prediction" width="300"/>
 </div>
 
+<div align="center">
+  <img src="./trajectory_visualization/vehicle_trajectory-1.gif" alt="Pedestrian Trajectory Prediction" width="300"/>
+</div>
+
+<div align="center">
+  <img src="./trajectory_visualization/vehicle_trajectory-2.gif" alt="Multi-Agent Trajectory Prediction" width="300"/>
+</div>
