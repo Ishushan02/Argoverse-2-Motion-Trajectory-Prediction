@@ -88,7 +88,7 @@ I explored multiple architectures from basic LSTMs to advanced encoder-decoder f
 
 ## 🚀 Overview
 
-**Model M** is the final architecture selected for trajectory prediction in multi-agent scenarios. It combines the most effective components from prior model iterations (A, B, and F), leading to improved encoding of agent dynamics and better generalization across diverse scenes.
+**Transformer Model** is the final architecture selected for trajectory prediction in multi-agent scenarios. It combines the most effective components from prior model iterations (A, B, and F), leading to improved encoding of agent dynamics and better generalization across diverse scenes.
 
 This model was used for **preliminary benchmarking** and serves as a strong baseline for future experiments.
 
@@ -119,15 +119,15 @@ This model was used for **preliminary benchmarking** and serves as a strong base
 
 ## 🎥 Trajectory Prediction Visualizations
 <div align="center">
-  <img src="./trajectory_visualization/vehicle_trajectory.gif" alt="Vehicle Trajectory Prediction" width="300"/>
+  <img src="./trajectory_visualization/vehicle_trajectory.gif" alt="Vehicle Trajectory Prediction" width="450"/>
 </div>
 
 <div align="center">
-  <img src="./trajectory_visualization/vehicle_trajectory-1.gif" alt="Pedestrian Trajectory Prediction" width="300"/>
+  <img src="./trajectory_visualization/vehicle_trajectory-1.gif" alt="Pedestrian Trajectory Prediction" width="450"/>
 </div>
 
 <div align="center">
-  <img src="./trajectory_visualization/vehicle_trajectory-2.gif" alt="Multi-Agent Trajectory Prediction" width="300"/>
+  <img src="./trajectory_visualization/vehicle_trajectory-2.gif" alt="Multi-Agent Trajectory Prediction" width="450"/>
 </div>
 
 ## 💻 Get Started
