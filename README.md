@@ -1,6 +1,3 @@
-Absolutely! Here’s the full updated README.md file including the 3 GIFs section for trajectory prediction visualizations:
-
-````markdown
 # 🚗 Argoverse-2 Motion Trajectory Prediction 🧠📈
 
 Welcome to the Argoverse 2 Motion Trajectory Prediction Challenge!  
@@ -132,7 +129,7 @@ My Competition Ranking - 9
 ### Example 1: Vehicle Trajectory Prediction
 
 <div align="center">
-  <img src="./trajectory_visualization/vehicle_trajectory.gif" alt="Vehicle Trajectory Prediction" width="600"/>
+  <img src="./trajectory_visualization/vehicle_trajectory.gif" alt="Vehicle Trajectory Prediction" width="300"/>
 </div>
 
 ---
@@ -140,7 +137,7 @@ My Competition Ranking - 9
 ### Example 2: Pedestrian Trajectory Prediction
 
 <div align="center">
-  <img src="./trajectory_visualization/vehicle_trajectory-1.gif" alt="Pedestrian Trajectory Prediction" width="600"/>
+  <img src="./trajectory_visualization/vehicle_trajectory-1.gif" alt="Pedestrian Trajectory Prediction" width="300"/>
 </div>
 
 ---
@@ -148,7 +145,7 @@ My Competition Ranking - 9
 ### Example 3: Multi-Agent Trajectory Prediction
 
 <div align="center">
-  <img src="./trajectory_visualization/vehicle_trajectory-2.gif" alt="Multi-Agent Trajectory Prediction" width="600"/>
+  <img src="./trajectory_visualization/vehicle_trajectory-2.gif" alt="Multi-Agent Trajectory Prediction" width="300"/>
 </div>
 ```
 
