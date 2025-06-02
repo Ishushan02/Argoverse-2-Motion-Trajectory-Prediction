@@ -84,8 +84,6 @@ I explored multiple architectures from basic LSTMs to advanced encoder-decoder f
 
 The **Transformer Model** is a deep learning model designed to predict future trajectories based on agent movement data. It processes high-dimensional input features using a multi-layered feedforward encoder that transforms them into a lower-dimensional representation. A transformer encoder then models temporal and inter-agent interactions by capturing dependencies across the input sequence. The model focuses on the first agent (assumed to be the ego agent) for trajectory prediction. The final output is a sequence of predicted 2D coordinates for the specified prediction length. This architecture is well-suited for applications such as autonomous driving or multi-agent tracking.
 
----
-
 ## 📐 Architecture Details
 
 ###  Key Parameters:
@@ -108,6 +106,8 @@ The **Transformer Model** is a deep learning model designed to predict future tr
 - `Final Test Accuracy`: 7.47883
 - `My Competition Ranking`: 9
 - `Kaggle Test Link`: https://www.kaggle.com/competitions/cse-251-b-2025/leaderboard
+
+---
 
 ## 🎥 Trajectory Prediction Visualizations
 <div align="center">
