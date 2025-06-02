@@ -41,41 +41,45 @@ Build ML models that predict **future trajectories** of agents with high accurac
 
 I explored multiple architectures from basic LSTMs to advanced encoder-decoder frameworks and many other Architectures.
 
----
 
-### **📘 Model A**
+### **📘 Architectures **
 
 **Architecture 1**  
-- 🧠 LSTM (1 unit) → MLP (3 layers)
+- 📙 LSTM (1 unit) → MLP (3 layers)
 <div align="center">
-  <img src="./documents/arch-1.png" alt="Model A Diagram" width="600"/>
+  <img src="./documents/arch-1.png" alt="Model A Diagram" width="200"/>
+</div>
+
+**Architecture 2**  
+- 📗 Encoder (3-layer MLP) → LSTM → Decoder (3-layer MLP)
+<div align="center">
+  <img src="./documents/arch-2.png" alt="Model A Diagram" width="200"/>
+</div>
+
+**Architecture 3**  
+- 📙 Encoder(Smaller MLP Followed by LSTM) and Decoder( Smaller LSTM followed by MLP) Units
+<div align="center">
+  <img src="./documents/arch-3.png" alt="Model A Diagram" width="200"/>
+</div>
+
+**Architecture 4**  
+- 🧱 Encoder(MLP Followed by LSTM) and Decoder(LSTM followed by MLP) Units along with Skip Connections
+<div align="center">
+  <img src="./documents/arch-4.png" alt="Model A Diagram" width="200"/>
+</div>
+
+**Architecture 5**  
+- 📗 Encoder(Single Layer MLP Followed by LSTM) and Decoder(Singler Layer LSTM followed by MLP)
+<div align="center">
+  <img src="./documents/arch-5.png" alt="Model A Diagram" width="200"/>
 </div>
 
 **Architecture 2**  
 - 🧱 Encoder (6-layer MLP) → LSTM → Decoder (6-layer MLP)
 
 
----
 
-### **📙 Model B**
-
-- 🔁 Simplified version of Model A
-- 🔹 Encoder (3-layer MLP) → LSTM → Decoder (3-layer MLP)
-
----
-
-### **📗 Model F**
-
-- 🌀 Similar to Model A with **Skip Connections** added between MLP layers
-- Better at handling information flow across the model
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/placeholder/skip-connection.png" alt="Skip Connections" width="500"/>
-</div>
-
----
-
-# Final Trajectory Transformer
+# Final Model Transformer
 
 ## 🚀 Overview
 
