@@ -148,8 +148,3 @@ My Competition Ranking - 9
   <img src="./trajectory_visualization/vehicle_trajectory-2.gif" alt="Multi-Agent Trajectory Prediction" width="300"/>
 </div>
 ```
-
----
-
-Just upload your GIF files under a `gifs/` folder or adjust the paths accordingly.
-Let me know if you want help making those GIFs or anything else!
