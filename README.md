@@ -110,3 +110,12 @@ x: Tensor of shape (B, N, T, Ft) = (Batch, Num Agents, Time Steps, Features)
    ```bash
    git clone https://github.com/yourusername/Argoverse-2-Motion-Trajectory-Prediction.git
    cd Argoverse-2-Motion-Trajectory-Prediction
+
+   Final Model is in - final1.ipynb 
+   Train MSE - 0.0019361081
+   Validation MSE - 0.0106566806
+   Validation MAE - 1.9310559519
+   Validation MSE(True) - 1.0656687887
+   Final Test Accuracy - 7.47883
+   My Competetion Ranking - 9
+
