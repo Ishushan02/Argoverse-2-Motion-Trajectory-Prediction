@@ -1,6 +1,5 @@
 # 🚗 Argoverse-2 Motion Trajectory Prediction
 
-Welcome to the Argoverse 2 Motion Trajectory Prediction Challenge!  
 This project focuses on building accurate **motion forecasting models** using the [Argoverse 2 Motion Forecasting Dataset](https://www.argoverse.org/av2.html). You'll work with real-world driving data, pushing the limits of AI in **autonomous vehicle navigation**.
 
 ---
