@@ -130,4 +130,4 @@ The **Transformer Model** is a deep learning model designed to predict future tr
    cd Argoverse-2-Motion-Trajectory-Prediction
    ```
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.txt)
