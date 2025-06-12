@@ -126,7 +126,7 @@ The **Transformer Model** is a deep learning model designed to predict future tr
   Clone the repo:
 
    ```
-   git clone https://github.com/yourusername/Argoverse-2-Motion-Trajectory-Prediction.git
+   git clone https://github.com/Ishushan02/Self-Driving-Motion-Prediction.git
    cd Argoverse-2-Motion-Trajectory-Prediction
    ```
 
